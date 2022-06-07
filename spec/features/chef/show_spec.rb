@@ -28,7 +28,7 @@ RSpec.describe 'chef show page' do
     expect(current_path).to eq(chef_ingredients_path(chef_1.id))
   end
 
-  xit 'shows three most popular ingredients' do 
+  it 'shows three most popular ingredients' do 
     visit chef_path(chef_1.id)
 
     expect(page).to have_content(ingredient_1.name)

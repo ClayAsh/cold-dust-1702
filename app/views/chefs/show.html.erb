@@ -3,6 +3,6 @@
 
 <%= link_to "All Ingredients", chef_ingredients_path(@chef.id) %>
 
-<%# <% @chef.most_popular_ingredients.each do |ing|%> %>
-  <%# <%=ing%> %>
-  <%# <%end%> %>
+<% @chef.most_popular_ingredients.each do |ing|%>
+  <%= ing %>
+  <%end %>

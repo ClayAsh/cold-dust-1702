@@ -24,10 +24,10 @@ RSpec.describe Chef, type: :model do
   end
 
   it 'shows unique list of ingredients' do 
-    expect(chef_1.unique_ingredients).to eq(["basil", "cheese", "tomato", "flour"])
+    expect(chef_1.unique_ingredients).to eq(["basil", "cheese", "flour", "tomato"])
   end
 
-  xit 'shows three most popular ingredients' do 
-    expect(chef_1.most_popular_ingredients).to eq(["cheese", "flour", "tomato"])
+  it 'shows three most popular ingredients' do 
+    expect(chef_1.most_popular_ingredients).to eq(["flour", "tomato", "cheese"])
   end
 end
